@@ -3,40 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
 
-    <h1>Enter value to generate table</h1>
+    <div class="container">
 
-    <input type="number" name="" id="num">
+        
+        <h1>Enter value to generate table</h1>
+        <br>
+        <br>
+        
+        <input type="number" name="" id="num">
+        
+        <button class="btn" onclick="tel()"> Generate Table</button>
 
-    <button onclick="tel()"> Generate Table</button>
+        <br>
+        <br>
+        
+        <p id="p1"></p>
+    </div>
 
-    <p id="p1"></p>
-
-    <script>
-
-        function tel()
-        {
-
-            
-            let num = parseInt(document.getElementById("num").value)
-            let tablecontent = '';
-            
-            for(let i = 1; i <= 10; i++)
-            {
-                
-                let result = i * num;
-                tablecontent += num + "*" + i + "=" + result + "<br>";
-
-               
-            }
-            
-            document.getElementById("p1").innerHTML = tablecontent; 
-
-    }
-        </script>
+    <script src="js/script.js"> </script>
 
     
 </body>
